@@ -94,7 +94,9 @@ void Mesh::Draw()
 
 void Mesh::Draw(Shader* shader, glm::mat4 cam)
 {
-	glUniformMatrix4fv(shader->getUniform(0), 1, GL_FALSE, glm::value_ptr(cam * getTRS()));
+	glUniformMatrix4fv(shader->getUniform(0), 1, GL_FALSE, glm::value_ptr(cam * this->getTRS()));
+	glUniformMatrix4fv(shader->getUniform(0), 1, GL_FALSE, glm::value_ptr(cam * this->getTRS()));
+
 	Draw();
 }
 

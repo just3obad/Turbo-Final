@@ -6,6 +6,8 @@
 
 #include <btBulletDynamicsCommon.h>
 
+#define SCALE 10.0f
+
 enum collisiontypes
 {
 	COL_NOTHING = 0,        //< Collide with nothing
@@ -50,10 +52,10 @@ void BulletCar::Draw(Shader* shader, glm::mat4 cam)
 void BulletCar::generateVehicle(btDiscreteDynamicsWorld* dynamicsWorld)
 {
 	// The vehicle
-	btScalar chassisMass(1.0f);
+	btScalar chassisMass(1.0f*SCALE);
 	btVector3 chassisInertia(0.0f, 0.0f, 0.0f);
-	btCollisionShape* chassisShape = new btBoxShape(btVector3(1.0f, 0.5f, 2.0f));
-	btDefaultMotionState* chassisMotionState = new btDefaultMotionState(btTransform(btQuaternion(0.0f, 0.0f, 0.0f, 1.0f), btVector3(250.0f, 10.0f, 300.0f)));
+	btCollisionShape* chassisShape = new btBoxShape(btVector3(1.0f*SCALE, 0.5f*SCALE, 2.0f*SCALE));
+	btDefaultMotionState* chassisMotionState = new btDefaultMotionState(btTransform(btQuaternion(0.0f, 0.0f, 0.0f, 1.0f), btVector3(400.0f, 20.0f, 900.0f)));
 	//btDefaultMotionState* chassisMotionState = new btDefaultMotionState(btTransform(btQuaternion(0.0f, 0.0f, 0.0f, 1.0f), btVector3(_pos.x, _pos.y, _pos.z)));
 	chassisShape->calculateLocalInertia(chassisMass, chassisInertia);
 	btRigidBody::btRigidBodyConstructionInfo chassisRigidBodyCI(chassisMass, chassisMotionState, chassisShape, chassisInertia);
@@ -71,12 +73,12 @@ void BulletCar::generateVehicle(btDiscreteDynamicsWorld* dynamicsWorld)
 	btVector3 wheelDirection(0.0f, -1.0f, 0.0f);
 	btVector3 wheelAxis(-1.0f, 0.0f, 0.0f);
 	btScalar suspensionRestLength(0.6f);
-	btScalar wheelRadius(0.5f);
+	btScalar wheelRadius(0.5f * SCALE);
 	// Be sure to attach the wheels not higher than the upper bounds of the hull of the vehicle chassis
-	_vehicle->addWheel(btVector3(-0.5f, 0.0f, 1.0f), wheelDirection, wheelAxis, suspensionRestLength, wheelRadius, tuning, true);
-	_vehicle->addWheel(btVector3(0.5f, 0.0f, 1.0f), wheelDirection, wheelAxis, suspensionRestLength, wheelRadius, tuning, true);
-	_vehicle->addWheel(btVector3(-0.5f, 0.0f, -1.0f), wheelDirection, wheelAxis, suspensionRestLength, wheelRadius, tuning, false);
-	_vehicle->addWheel(btVector3(0.5f, 0.0f, -1.0f), wheelDirection, wheelAxis, suspensionRestLength, wheelRadius, tuning, false);
+	_vehicle->addWheel(btVector3(-0.5f * SCALE, 0.0f, 1.0f * SCALE), wheelDirection, wheelAxis, suspensionRestLength, wheelRadius, tuning, true);
+	_vehicle->addWheel(btVector3(0.5f * SCALE, 0.0f, 1.0f * SCALE), wheelDirection, wheelAxis, suspensionRestLength, wheelRadius, tuning, true);
+	_vehicle->addWheel(btVector3(-0.5f * SCALE, 0.0f, -1.0f * SCALE), wheelDirection, wheelAxis, suspensionRestLength, wheelRadius, tuning, false);
+	_vehicle->addWheel(btVector3(0.5f * SCALE, 0.0f, -1.0f * SCALE), wheelDirection, wheelAxis, suspensionRestLength, wheelRadius, tuning, false);
 
 	dynamicsWorld->addAction(_vehicle);
 }

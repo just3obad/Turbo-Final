@@ -77,8 +77,7 @@ glm::mat4 BulletMesh::getTRS()
 btRigidBody* BulletMesh::getRigidBody()
 {
 	btDefaultMotionState* groundMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(0, 0, 0)));
-	btRigidBody::btRigidBodyConstructionInfo
-	groundRigidBodyCI(0, groundMotionState, getBulletColisionSet(), btVector3(0, 0, 0));
+	btRigidBody::btRigidBodyConstructionInfo groundRigidBodyCI(0, groundMotionState, this->getBulletColisionSet(), btVector3(0, 0, 0));
 	_RigBody = new  btRigidBody(groundRigidBodyCI);
 	return  _RigBody;
 }
