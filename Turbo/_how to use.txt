@@ -1,0 +1,17 @@
+1. imporrt HeightMapper into project
+
+2. load the map (eventually adjust the path)
+	HeightMapper *mapper = new HeightMapper();
+	GLuint mapVAO = mapper->loadHeightMap("img\\Track.bmp");
+	
+3. call in your draw methode
+	...
+	//your glUseProgram(shader_programme)
+	glBindVertexArray(mapVAO);
+	glDrawRangeElements(GL_TRIANGLE_STRIP, 0, mapper->getIndicesCount(), mapper->getTriangleCount(), GL_UNSIGNED_INT, NULL);
+	
+
+	
+aditional info
+	the image file has to be an 8bit bmp file
+	

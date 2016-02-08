@@ -1,0 +1,617 @@
+# File produced by 
+
+newmtl Add_on_0
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.498 0.498 0.498
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Aileron
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.1765 0.1765 0.1765
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Box01
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.498 0.498 0.498
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Box02
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Box04
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Box05
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Box06
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Box08
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.498 0.498 0.498
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Box11
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Box12
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Box13
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Box14
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Caixa_dos
+  Ns 26.4
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Caixa_dos1
+  Ns 26.4
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Chassi
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0.3569 0.3569 0.3569
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Chassi_1
+  Ns 114.03
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.498 0.498 0.498
+
+newmtl Chassi_2
+  Ns 102.6
+  d 1.0
+  illum 2
+  Kd 0.7843 0 0
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Chassi_3
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.898 0.898 0.898
+
+newmtl Chassi_4
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.1922 0.1922 0.1922
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Cylinder02
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.7608 0.7608 0.7608
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Cylinder04
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.7608 0.7608 0.7608
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Cylinder05
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.7608 0.7608 0.7608
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Cylinder06
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.7608 0.7608 0.7608
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Escape
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0.851 0.851 0.851
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Escape01
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0.851 0.851 0.851
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Farol_10
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.7608 0.7608 0.7608
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Farol_20
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.7608 0.7608 0.7608
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Farol_21
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.7608 0.7608 0.7608
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Farol_22
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.7608 0.7608 0.7608
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Farol_Tra1
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 1.0 0 0
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Farol_Traz
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 1.0 0 0
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Fundo_Pre1
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.898 0.898 0.898
+
+newmtl Fundo_Pret
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.898 0.898 0.898
+
+newmtl Grelha01
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0.0745 0.0745 0.0745
+  Ka 0.0745 0.0745 0.0745
+  Ks 0.898 0.898 0.898
+
+newmtl Grelha02
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0.0745 0.0745 0.0745
+  Ka 0.0745 0.0745 0.0745
+  Ks 0.898 0.898 0.898
+
+newmtl Jante_0
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.651 0.651 0.651
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_03
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.651 0.651 0.651
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_04
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.5804 0.5804 0.5804
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_05
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.651 0.651 0.651
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_06
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.651 0.651 0.651
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_07
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.5804 0.5804 0.5804
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_08
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.651 0.651 0.651
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_09
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.651 0.651 0.651
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_1
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.651 0.651 0.651
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_10
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.5804 0.5804 0.5804
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_11
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.651 0.651 0.651
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Jante_2
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.5804 0.5804 0.5804
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Plane01
+  Ns 51.8
+  d 0
+  illum 2
+  Kd 0.498 0.498 0.498
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Plane02
+  Ns 51.8
+  d 0
+  illum 2
+  Kd 0.498 0.498 0.498
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Pneus
+  Ns 26.4
+  d 1.0
+  illum 2
+  Kd 0.051 0.051 0.051
+  Ka 0.051 0.051 0.051
+  Ks 0.302 0.302 0.302
+
+newmtl Retroviso0
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.0157 0.0157 0.0157
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Retroviso1
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.498 0.498 0.498
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Retroviso2
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.0157 0.0157 0.0157
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Retroviso3
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.498 0.498 0.498
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Saias_0
+  Ns 26.4
+  d 1.0
+  illum 2
+  Kd 0.2157 0.2157 0.2157
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Saias_1
+  Ns 26.4
+  d 1.0
+  illum 2
+  Kd 0.2157 0.2157 0.2157
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Shape02
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.898 0.898 0.898
+
+newmtl Shape03
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0.0745 0.0745 0.0745
+  Ka 0.0745 0.0745 0.0745
+  Ks 0.898 0.898 0.898
+
+newmtl Shape10
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0.0745 0.0745 0.0745
+  Ka 0.0745 0.0745 0.0745
+  Ks 0.898 0.898 0.898
+
+newmtl Shape11
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.898 0.898 0.898
+
+newmtl Shape13
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.898 0.898 0.898
+
+newmtl Shape15
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.898 0.898 0.898
+
+newmtl Suporte_d1
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.9843 0.9843 0.9843
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Suporte_do
+  Ns 51.8
+  d 1.0
+  illum 2
+  Kd 0.9843 0.9843 0.9843
+  Ka 0 0 0
+  Ks 1.0 1.0 1.0
+
+newmtl Tampoes
+  Ns 13.7
+  d 1.0
+  illum 2
+  Kd 0 0 0
+  Ka 0 0 0
+  Ks 0.898 0.898 0.898
+
+newmtl Travao_03
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_04
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_05
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_06
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_07
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_08
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_09
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_10
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_11
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_12
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_13
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
+
+newmtl Travao_14
+  Ns 64.5
+  d 1.0
+  illum 2
+  Kd 0.4157 0.4157 0.4157
+  Ka 0 0 0
+  Ks 0.7255 0.7255 0.7255
