@@ -1,4 +1,4 @@
-#include "stdafx.h"
+// #include "stdafx.h"
 #include "BulletCar.h"
 #include "glm.hpp"
 #include "gtc\matrix_transform.hpp"

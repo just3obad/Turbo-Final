@@ -1,7 +1,7 @@
-// Turbo.cpp : Defines the entry point for the console application.
+// turbo.cpp : Defines the entry point for the console application.
 //
 #define _CRT_SECURE_NO_DEPRECATE
-#include "stdafx.h"
+// #include "stdafx.h"
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include "glm.hpp"
@@ -16,7 +16,7 @@
 #include "gtc/type_ptr.hpp"
 #include "test.h"
 
-#include "gtc\matrix_transform.hpp"
+#include "gtc/matrix_transform.hpp"
 #include <iostream>
 #include <fstream>
 #include "Mesh.h"

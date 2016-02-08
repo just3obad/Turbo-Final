@@ -6,7 +6,7 @@
 //  Copyright © 2016 Deniz Kesmez. All rights reserved.
 //
 
-#include "stdafx.h"
+// #include "stdafx.h"
 #include "Mesh.h"
 //#include "util.h"
 #include <map>

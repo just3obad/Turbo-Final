@@ -6,7 +6,7 @@
 //  Copyright © 2016 Deniz Kesmez. All rights reserved.
 //
 
-#include "stdafx.h"
+// #include "stdafx.h"
 #include "obj_loader.h"
 #include <fstream>
 #include <iostream>

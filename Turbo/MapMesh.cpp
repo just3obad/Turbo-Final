@@ -1,4 +1,4 @@
-#include "stdafx.h"
+// #include "stdafx.h"
 #include "MapMesh.h"
 #include <iostream>
 #include "gtc/type_ptr.hpp"
