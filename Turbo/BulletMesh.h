@@ -7,7 +7,7 @@ class BulletMesh :
 {
 public:
 	BulletMesh(const std::string& fileName);
-	btRigidBody* BulletMesh::getRigidBody();
+	btRigidBody* getRigidBody();
 	glm::mat4 getTRS();
 	//void Draw();
 	//void Draw(Shader* shader, glm::mat4 cam);

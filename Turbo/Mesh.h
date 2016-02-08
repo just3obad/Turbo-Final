@@ -62,7 +62,7 @@ public:
 	void setScale(glm::vec3 scale);
 	float getRotationLeftRight();
 	void setRotationLeftRight(float rot);
-	GLuint Mesh::loadImage(const std::string& path);
+	GLuint loadImage(const std::string& path);
 
 	glm::mat4 getTRS();
 

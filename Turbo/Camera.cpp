@@ -1,6 +1,6 @@
 // #include "stdafx.h"
 #include "Camera.h"
-#include "gtc\matrix_transform.hpp"
+#include "gtc/matrix_transform.hpp"
 
 Camera::Camera()
 {

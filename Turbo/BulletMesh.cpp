@@ -1,6 +1,6 @@
 // #include "stdafx.h"
 #include "BulletMesh.h"
-#include "gtc\matrix_transform.hpp"
+#include "gtc/matrix_transform.hpp"
 #include "gtc/type_ptr.hpp"
 
 BulletMesh::BulletMesh(const std::string& fileName)

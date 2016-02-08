@@ -9,12 +9,20 @@
 
 #define WALLHEIGHT 3
 
-std::vector<glm::vec2> testvector{ glm::vec2(0, -1), glm::vec2(1, -1), glm::vec2(1, 0), glm::vec2(1, 1), glm::vec2(0, 1), glm::vec2(-1, 1), glm::vec2(-1, 0), glm::vec2(-1, -1) };
+	glm::vec2 initTest[8] = {
+		glm::vec2(0, -1), 
+		glm::vec2(1, -1), 
+		glm::vec2(1, 0), 
+		glm::vec2(1, 1), 
+		glm::vec2(0, 1), 
+		glm::vec2(-1, 1), 
+		glm::vec2(-1, 0), 
+		glm::vec2(-1, -1) 
+	};
 
 HeightMapper::HeightMapper()
 {
 }
-
 
 HeightMapper::~HeightMapper()
 {
@@ -322,11 +330,11 @@ bool HeightMapper::getNeigbourPixel(glm::vec2 old, glm::vec2 test, glm::vec2 &ou
 {
 	for (int i = 0; i < 8; i++)
 	{
-		if (isBlack(test + testvector[i]))
+		if (isBlack(test + initTest[i]))
 		{
-			if (test + testvector[i] != old)
+			if (test + initTest[i] != old)
 			{
-				out = test + testvector[i];
+				out = test + initTest[i];
 				//std::cout << "next:" << (test + testvector[i]).x << " : " << (test + testvector[i]).y << std::endl;
 				return true;
 			}

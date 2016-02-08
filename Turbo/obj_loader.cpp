@@ -304,7 +304,7 @@ void OBJModel::CreateOBJFace(const std::string& line)
 void OBJModel::UseMaterial(const std::string& line, int i, int curmat)
 {
     /*char tmp[200];
-    sscanf_s(line.c_str(),"usemtl %s",tmp);      //read the name of the material to tmp
+    sscanf(line.c_str(),"usemtl %s",tmp);      //read the name of the material to tmp
     for(int i=0;i<materials.size();i++)     //go through all of the materials
     {
         if(strcmp(materials[i]->name.c_str(),tmp)==0)   //and compare the tmp with the name of the material
@@ -320,7 +320,7 @@ void OBJModel::ImportMaterials(const std::string& line, int i)
     char *filen=NULL;
 	string add = "./objects/";
     //string add = "./";
-    sscanf_s(line.c_str(),"mtllib %s",filen);    //read the filename
+    sscanf(line.c_str(),"mtllib %s",filen);    //read the filename
     add.append(filen);
     std::ifstream mtlin(add);     //open the file
     if(!mtlin.is_open())    //if not opened error message, clean all memory, return with -1
@@ -343,7 +343,7 @@ void OBJModel::ImportMaterials(const std::string& line, int i)
         int illum;
         unsigned int texture = 0;
         bool ismat=false;       //do we already have a material read in to these variables?
-        strcpy_s(filename,"\0");  //set filename to nullbyte character
+        strcpy(filename,"\0");  //set filename to nullbyte character
         for(int i=0;i<tmp.size();i++) //go through all lines of the mtllib file
         {
             if(tmp[i][0]=='#')      //we don't care about comments
@@ -355,40 +355,40 @@ void OBJModel::ImportMaterials(const std::string& line, int i)
                     if(strcmp(filename,"\0")!=0)    //if we have a texture
                     {
                         materials.push_back(new material(name,alpha,ns,ni,dif,amb,spec,illum,texture)); //push back
-                        strcpy_s(filename,"\0");
+                        strcpy(filename,"\0");
                     }else{
                         materials.push_back(new material(name,alpha,ns,ni,dif,amb,spec,illum,-1));              //push back, but use -1 to texture
                     }
                 }
                 ismat=false;    //we start from a fresh material
-                sscanf_s(tmp[i].c_str(),"newmtl %s",name);        //read in the name
+                sscanf(tmp[i].c_str(),"newmtl %s",name);        //read in the name
             }else if(tmp[i][0]=='N' && tmp[i][1]=='s')      //the shininess
             {
-                sscanf_s(tmp[i].c_str(),"Ns %f",&ns);
+                sscanf(tmp[i].c_str(),"Ns %f",&ns);
                 ismat=true;
             }else if(tmp[i][0]=='K' && tmp[i][1]=='a')      //the ambient
             {
-                sscanf_s(tmp[i].c_str(),"Ka %f %f %f",&amb[0],&amb[1],&amb[2]);
+                sscanf(tmp[i].c_str(),"Ka %f %f %f",&amb[0],&amb[1],&amb[2]);
                 ismat=true;
             }else if(tmp[i][0]=='K' && tmp[i][1]=='d')      //the diffuse
             {
-                sscanf_s(tmp[i].c_str(),"Kd %f %f %f",&dif[0],&dif[1],&dif[2]);
+                sscanf(tmp[i].c_str(),"Kd %f %f %f",&dif[0],&dif[1],&dif[2]);
                 ismat=true;
             }else if(tmp[i][0]=='K' && tmp[i][1]=='s')      //the specular
             {
-				sscanf_s(tmp[i].c_str(), "Ks %f %f %f", &spec[0], &spec[1], &spec[2]);
+				sscanf(tmp[i].c_str(), "Ks %f %f %f", &spec[0], &spec[1], &spec[2]);
                 ismat=true;
             }else if(tmp[i][0]=='N' && tmp[i][1]=='i')      //the I don't know what is this
             {
-				sscanf_s(tmp[i].c_str(), "Ni %f", &ni);
+				sscanf(tmp[i].c_str(), "Ni %f", &ni);
                 ismat=true;
             }else if(tmp[i][0]=='d' && tmp[i][1]==' ')      //the alpha
             {
-				sscanf_s(tmp[i].c_str(), "d %f", &alpha);
+				sscanf(tmp[i].c_str(), "d %f", &alpha);
                 ismat=true;
             }else if(tmp[i][0]=='i' && tmp[i][1]=='l')      //the illum (don't ask)
             {
-				sscanf_s(tmp[i].c_str(), "illum %d", &illum);
+				sscanf(tmp[i].c_str(), "illum %d", &illum);
                 ismat=true;
             }/*else if(tmp[i][0]=='m' && tmp[i][1]=='a')      //and the texture
             {

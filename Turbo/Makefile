@@ -5,7 +5,7 @@
 #
 CC     = cc
 CPP    = c++
-CPPFLAGS = -I../glfw/include -I../glloadgen -I../glm/glm -pthread -O2 -Wall
+CPPFLAGS = -I../glfw/include -I../glloadgen -I../glm/glm -I../bullet -pthread -O2 -Wall
 
 GROUP = game
 
@@ -15,16 +15,16 @@ GROUP = game
 UNAME := $(shell uname)
 ifeq ($(UNAME), Linux)
 EXTRA_DEFINES  = -DLINUX
-LIBS         = ../glfw/src/libglfw3.a
+LIBS         = ../glfw/src/libglfw3.a ../bullet/BulletDynamics/libBulletDynamics.a ../bullet/BulletCollision/libBulletCollision.a ../bullet/LinearMath/libLinearMath.a
 LFLAGS       = $(LIB_LINUX) -lXrandr -lGL -lXi -pthread -lm -lX11 -lXxf86vm
 endif
 ifeq ($(UNAME), Darwin)
 EXTRA_DEFINES  = -DLION
-LIBS         = ../glfw/src/libglfw3.a
+LIBS         = ../glfw/src/libglfw3.a  ../bullet/BulletDynamics/libBulletDynamics.a ../bullet/BulletCollision/libBulletCollision.a ../bullet/LinearMath/libLinearMath.a
 LFLAGS       = $(LIB_MAC) -lGLEW -framework GLUT -framework Cocoa -framework OpenGL -framework IOKit
 endif
 
-PROJECTFILES	= lodepng.o heightmapper.o camera.o shaderprogram.o obj_loader.o mesh.o
+PROJECTFILES	= lodepng.o heightmapper.o camera.o shaderprogram.o obj_loader.o mesh.o bulletmesh.o bulletcar.o mapmesh.o soundengine.o
 OBJECTFILES      = turbo.o ../glloadgen/gl_core_32.o ../glloadgen/KHR_debug_emulator.o $(PROJECTFILES)
 
 
@@ -66,6 +66,21 @@ obj_loader.o: obj_loader.cpp
 
 mesh.o: Mesh.cpp
 	$(CPP) $(CPPFLAGS) -Wno-write-strings -c Mesh.cpp -o mesh.o
+
+bulletmesh.o: BulletMesh.cpp
+	$(CPP) $(CPPFLAGS) -Wno-write-strings -c BulletMesh.cpp -o bulletmesh.o
+
+bulletcar.o: BulletCar.cpp
+	$(CPP) $(CPPFLAGS) -Wno-write-strings -c BulletCar.cpp -o bulletcar.o
+
+#collisiondetection.o: Collisiondetection.cpp
+#	$(CPP) $(CPPFLAGS) -Wno-write-strings -c Collisiondetection.cpp -o collisiondetection.o
+
+mapmesh.o: MapMesh.cpp
+	$(CPP) $(CPPFLAGS) -Wno-write-strings -c MapMesh.cpp -o mapmesh.o
+
+soundengine.o: SoundEngine.cpp
+	$(CPP) $(CPPFLAGS) -Wno-write-strings -c SoundEngine.cpp -o soundengine.o
 
 clean:
 	rm -f *.o

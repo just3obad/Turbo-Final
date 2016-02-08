@@ -61,7 +61,7 @@ btDiscreteDynamicsWorld* dynamicsWorld;
 
 
 btCollisionShape *heightmap;
-double time;
+double timeNow;
 double timeold;
 
 void heightmapcollision()
@@ -118,7 +118,7 @@ int initOpenGL()
 void loadContent()
 {
 	//initialise time
-	time = glfwGetTime();
+	timeNow = glfwGetTime();
 	timeold = glfwGetTime();
 
 	//load Map
@@ -353,7 +353,7 @@ void destroy()
 	delete dynamicsWorld;
 }
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char* argv[])
 {
 	if (initOpenGL() == -1)
 		return -1;
@@ -361,9 +361,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	loadContent();
 
 	//loop
-	timeold = time;
-	time = glfwGetTime();
-	double deltaTime = time - timeold;
+	timeold = timeNow;
+	timeNow = glfwGetTime();
+	double deltaTime = timeNow - timeold;
 	while (!glfwWindowShouldClose(window))
 	{
 		updateContend(deltaTime);
