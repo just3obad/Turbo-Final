@@ -127,8 +127,8 @@ void loadContent()
 
 	//load Shader
 	//shader = new Shader("shader\\heightColor");
-	shader2 = new Shader("shader\\LightMaterial");
-	shader3 = new Shader("shader\\Texture");
+	shader2 = new Shader("shader/LightMaterial");
+	shader3 = new Shader("shader/Texture");
 
 	//create Camera object
 	cam = new Camera();
@@ -136,40 +136,40 @@ void loadContent()
 	cam->setLockat(glm::vec3(500, 0, 250));
 
 	//load Mesh
-	mesh = new Mesh("objects\\object1.obj");
+	mesh = new Mesh("objects/object1.obj");
 	mesh->setRotationLeftRight(0); //says degre, semes rad
 	mesh->setPosition(glm::vec3(250.0f, 10.0f, 310.0f));
 	mesh->setScale(glm::vec3(5.0f, 5.0f, 5.0f));
 
 	//load watersurface
-	water = new Mesh("objects\\plane.obj");
+	water = new Mesh("objects/plane.obj");
 	water->setRotationLeftRight(0); //says degre, semes rad
 	water->setPosition(glm::vec3(0.0f, -80.0f, 0.0f));
 	water->setScale(glm::vec3(2000.0f, 0.0f, 1250.0f));
-	water->loadImage("img\\WaterPlain0017_1_S");
+	water->loadImage("img/WaterPlain0017_1_S");
 
 	//load Start
-	startLine = new BulletMesh("objects\\plane.obj");
+	startLine = new BulletMesh("objects/plane.obj");
 	startLine->setRotationLeftRight(0); //says degre, semes rad
 	startLine->setPosition(glm::vec3(300.0f, 0.0f, 325.0f));
 	startLine->setScale(glm::vec3(50.0f, 1.0f, 10.0f));
-	startLine->loadImage("img\\Start");
+	startLine->loadImage("img/Start");
 
 	//load Sky
-	Sky = new BulletMesh("objects\\Cube.obj");
+	Sky = new BulletMesh("objects/Cube.obj");
 	Sky->setRotationLeftRight(0); //says degre, semes rad
 	Sky->setPosition(glm::vec3(-250.0f, -150.0f, -250.0f));
 	Sky->setScale(glm::vec3(2500.0f, 500.0f, 1750.0f));
-	Sky->loadImage("img\\Start");
+	Sky->loadImage("img/Start");
 
 	//load Map
-	map = new MapMesh("objects\\Terrain 1_8.obj");
+	map = new MapMesh("objects/Terrain 1_8.obj");
 	map->setRotationLeftRight(0); //says degre, semes rad
 	map->setPosition(glm::vec3(2000.0f, -100.0f, 0.0f));
 	map->setScale(glm::vec3(1.0f, 1.0f, 1.0f));
 
 	//load Coin
-	Coin = new BulletMesh("objects\\object1.obj");
+	Coin = new BulletMesh("objects/object1.obj");
 	Coin->setPosition(glm::vec3(250.0f, 100.0f, 310.0f));
 	Coin->setScale(glm::vec3(5.0f, 5.0f, 5.0f));
 
@@ -187,7 +187,7 @@ void loadContent()
 	heightmapcollision();
 
 	//load BuletMesh
-	car = new BulletCar("objects\\8275_Seat_Concept.obj", dynamicsWorld);
+	car = new BulletCar("objects/8275_Seat_Concept.obj", dynamicsWorld);
 	//car->setPosition(glm::vec3(500.0f, 0.0f, 300.0f));
 	car->setRotationLeftRight(1.57f);
 	car->setScale(glm::vec3(0.05f, 0.05f, 0.05f));
